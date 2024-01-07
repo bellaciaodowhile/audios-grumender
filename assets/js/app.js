@@ -45,7 +45,7 @@ $(function () {
         ],
         albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
         trackUrl = [
-            "../audio/es la vida.mp3",
+            "https://bellaciaodowhile.github.io/audios-grumender/assets/audio/es%20la%20vida.mp3",
             "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
             "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
             "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
@@ -54,31 +54,36 @@ $(function () {
         playPreviousTrackButton = $("#play-previous"),
         playNextTrackButton = $("#play-next"),
         letters = [
-            {
-                0: 'hola1',
-                1: 'como',
-                2: 'estas',
-            },
-            {
-                0: 'hola2',
-                1: 'como',
-                2: 'estas',
-            },
-            {
-                0: 'hola3',
-                1: 'como',
-                2: 'estas',
-            },
-            {
-                0: 'hola4',
-                1: 'como',
-                2: 'estas',
-            },
-            {
-                0: 'hola5',
-                1: 'como',
-                2: 'estas',
-            }
+            [
+                'Es la vida de mi alma. Oh Cristo, oh Cristo.',
+                'Es la vida de mi alma. Es Jesús, mi Salvador.',
+                'Cristo, Cristo, Cristo, Cristo',
+                'Es la vida de mi alma. Es Jesús, mi Salvador.',
+                'Mi ser estpa sediento de amarte, de amarte. Mi ser está sediento de amar a ti Señor.',
+                'Cristo, Cristo, Cristo, Cristo',
+                'Es la vida de mi alma. Es Jesús, mi Salvador.',
+                'Señor.'
+            ],
+            [
+                'hola1',
+                'como1',
+                'estas1'
+            ],
+            [
+                'hola1',
+                'como1',
+                'estas1'
+            ],
+            [
+                'hola1',
+                'como1',
+                'estas1'
+            ],
+            [
+                'hola1',
+                'como1',
+                'estas1'
+            ]
         ]
         currIndex = -1;
 
@@ -218,15 +223,22 @@ $(function () {
             trackTime.removeClass("active");
             tProgress.text("00:00");
             tTime.text("00:00");
-
+            // * trae esto 
             currAlbum = albums[currIndex];
             currTrackName = trackNames[currIndex];
             currArtwork = albumArtworks[currIndex];
+
+            // * y añadí esto para obtener las letras según la canción
             currentLetter = letters[currIndex];
-
-
-            // currentLetter
-
+            console.log(currentLetter)
+            let letterHTML = document.querySelector('section.letter');
+            letterHTML.innerHTML = '';
+            for (item of currentLetter) {
+                letterHTML.innerHTML += /*html*/`
+                <div class="letter__p">
+                    ${ item }
+                </div>`;
+            }
 
             audio.src = trackUrl[currIndex];
 
