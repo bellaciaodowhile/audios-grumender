@@ -59,7 +59,7 @@ $(function () {
                 'Es la vida de mi alma. Es Jesús, mi Salvador.',
                 'Cristo, Cristo, Cristo, Cristo',
                 'Es la vida de mi alma. Es Jesús, mi Salvador.',
-                'Mi ser estpa sediento de amarte, de amarte. Mi ser está sediento de amar a ti Señor.',
+                'Mi ser está sediento de amarte, de amarte. Mi ser está sediento de amar a ti Señor.',
                 'Cristo, Cristo, Cristo, Cristo',
                 'Es la vida de mi alma. Es Jesús, mi Salvador.',
                 'Señor.'
