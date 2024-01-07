@@ -31,25 +31,25 @@ $(function () {
         tFlag = false,
         albums = [
             "Es la vida",
-            "Me & You",
-            "Electro Boy",
-            "Home",
-            "Proxy (Original Mix)"
+            "La Roca",
+            "La Redención",
+            "Engrandecido Sea Dios",
+            "El es Señor Jehova"
         ],
         trackNames = [
-            "Grumender",
-            "Alex Skrindo - Me & You",
-            "Kaaze - Electro Boy",
-            "Jordan Schor - Home",
-            "Martin Garrix - Proxy"
+            "Acapella",
+            "Acapella",
+            "Con Pista",
+            "Con Pista",
+            "Con Pista"
         ],
         albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
         trackUrl = [
             "https://bellaciaodowhile.github.io/audios-grumender/assets/audio/es%20la%20vida.mp3",
-            "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
-            "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
-            "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
-            "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
+            "https://bellaciaodowhile.github.io/audios-grumender/assets/audio/La%20Roca.mp3",
+            "https://bellaciaodowhile.github.io/audios-grumender/assets/audio/La%20Redencion.mp3",
+            "https://bellaciaodowhile.github.io/audios-grumender/assets/audio/Engrandecido%20sea%20Dios.mp3",
+            "https://bellaciaodowhile.github.io/audios-grumender/assets/audio/El%20es%20Senor%20Jehova.mp3"
         ],
         playPreviousTrackButton = $("#play-previous"),
         playNextTrackButton = $("#play-next"),
@@ -65,24 +65,37 @@ $(function () {
                 'Señor.'
             ],
             [
-                'hola1',
-                'como1',
-                'estas1'
+                'Es la roca de mi ser, es el que da paz a mi corazón.',
+                'Si es el sol que ilumina mi vida, si lo es.',
+                'Su dulce nombre es Jesús por siempre lo cantaré, lo esperaré. Porque Él es mi Salvador.',
+                'En mi corazón tengo a Cristo, de la mano voy con el hacia el cielo.',
+                'Yo contaré que tengo un amigo cuyo nombre es Jesucristo. Hoy le doy mi corazón.',
+                'Es la roca de mi ser, es el que da paz a mi corazón.',
+                'Si es el sol que ilumina mi vida, si lo es.',
+                'Su dulce nombre es Jesús, por siempre lo cantaré, lo esperaré.',
+                'Porque Él es mi salvador',
+                'En mi corazón tengo a Cristo, de la mano voy con el hacia el cielo.',
+                'Yo contaré que tengo un amigo cuyo nombre es Jesucristo. Hoy le doy mi corazón.',
+                'Es la roca de mi ser, es el que da paz a mi corazón.',
+                '¡Oh es el sol! que ilumina mi vida, si lo es.',
+                'Su dulce nombre es Jesús, por siempre lo cantaré, lo esperaré.',
+                'Porque Él es mi salvador',
+                'Lo esperaré. Porque Él es mi Salvador (Bis 4)',
             ],
             [
-                'hola1',
-                'como1',
-                'estas1'
+                'falta copiar la letra',
+                'falta copiar la letra',
+                'falta copiar la letra'
             ],
             [
-                'hola1',
-                'como1',
-                'estas1'
+                'falta copiar la letra',
+                'falta copiar la letra',
+                'falta copiar la letra'
             ],
             [
-                'hola1',
-                'como1',
-                'estas1'
+                'falta copiar la letra',
+                'falta copiar la letra',
+                'falta copiar la letra'
             ]
         ]
         currIndex = -1;
